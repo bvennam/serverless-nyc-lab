@@ -128,6 +128,6 @@ Change directories to the folder containing the action. `cd CORRECT_FOLDER`
 		    },
 
 
-		  As you can see, the response contains our expected message topic.
+		  As you can see, the response contains our expected message and topic.
 		  
 	* You can also go view the [monitor dashboard](https://console.bluemix.net/openwhisk/dashboard) to see some recent invocations.
