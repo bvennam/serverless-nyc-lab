@@ -97,6 +97,7 @@ Change directories to the folder containing the action. `cd CORRECT_FOLDER`
 	  ```
 	  ibmcloud fn trigger create myMessageHubTrigger -f myMessageHub/messageHubFeed -p topic mytopic -p isJSONData true
 	  ```
+
 6. The trigger needs to be connected to the action via a rule, so that the action will be run whenever a new item is on the kafka topic:
 
 	```
@@ -107,18 +108,16 @@ Change directories to the folder containing the action. `cd CORRECT_FOLDER`
 	* Look at the activations: 
 	  * `ibmcloud fn activation list` to see something like this:
 	 
-
-			```
+			
 			activations
 			02e1e4fa56dc49c1a1e4fa56dcc9c1d2 kafkaAction          
 			9c10e5ac5c21449690e5ac5c21c49611 MyMessageHubTrigger 
-			```
-	As you can see, the trigger was fired, which cased the kafkaAction to be fired due to the rule we created. 
-	  * See the output for the kafkaAction activation: `ibmcloud fn activation get  02e1e4fa56dc49c1a1e4fa56dcc9c1d2`
+			
 
-		  	Sample response object output:
+	As you can see, the trigger was fired, which cased the kafkaAction to be fired due to the rule we created. 
+	  * See the output for the kafkaAction activation: `ibmcloud fn activation get  02e1e4fa56dc49c1a1e4fa56dcc9c1d2` to see something like this:
 		
-		  	```
+
 		  	"response": {
 		  		"status": "success",
 		  		"statusCode": 0,
@@ -127,7 +126,7 @@ Change directories to the folder containing the action. `cd CORRECT_FOLDER`
 		  			"greeting": "The message \"This is the content of my message\" arrived on the kafka topic mytopic"
         		}
 		    },
-		    ```
+
 
 		  As you can see, the response contains our expected message topic.
 		  
