@@ -21,13 +21,13 @@ Feel free to reach out with any questions!
         * Link to installer: [Link to installer](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)
 	
 2. Configure your environment
-  * Select your API: `ibmcloud api https://api.ng.bluemix.net`
-  * Login: `ibmcloud login`
-  * You should have an org created already. Target your org with the command `ibmcloud target --cf`
-  * You do not have a space; let's create one. In this example, we'll call our space dev, but you can choose anything you want: `ibmcloud cf create-space dev`
-  * Ensure your org & space is correctly targeted using `ibmcloud target --cf`
-  * Install the IBM Cloud Functions plugin for the CLI: `ibmcloud plugin install cloud-functions`
-  * Confirm plugin is installed: `ibmcloud fn` shoudl return some help information.
+    * Select your API: `ibmcloud api https://api.ng.bluemix.net`
+    * Login: `ibmcloud login`
+    * You should have an org created already. Target your org with the command `ibmcloud target --cf`
+    * You do not have a space; let's create one. In this example, we'll call our space dev, but you can choose anything you want: `ibmcloud cf create-space dev`
+    * Ensure your org & space is correctly targeted using `ibmcloud target --cf`
+    * Install the IBM Cloud Functions plugin for the CLI: `ibmcloud plugin install cloud-functions`
+    * Confirm plugin is installed: `ibmcloud fn` shoudl return some help information.
 
 ### Create your first action (Hello World) using the CLI!
 *Your first goal is to create a simple hello world action.  This action will return the string 'Hello World' when it is in invoked.*
