@@ -13,12 +13,12 @@ Feel free to reach out with any questions!
 *In this section, you will install the IBM Cloud CLI and the IBM Cloud Functions Plugin to the CLI, as well as do some account set up and configuration. This will enable you to interact with IBM Cloud Functions from a command line interface.*
 
 1. Install the IBM Cloud CLI 
-  1. From Shell:
-	  * Mac/Linux: In your terminal window, run `curl -sL https://ibm.biz/idt-installer | bash`
-	  * Windows 10 Pro, run `Set-ExecutionPolicy Unrestricted; iex(New-Object Net.WebClient).DownloadString('http://ibm.biz/idt-win-installer')`
+    1. From Shell:
+	    * Mac/Linux: In your terminal window, run `curl -sL https://ibm.biz/idt-installer | bash`
+	    * Windows 10 Pro, run `Set-ExecutionPolicy Unrestricted; iex(New-Object Net.WebClient).DownloadString('http://ibm.biz/idt-win-installer')`
  
-  2. Alternatively, you can use an installer:
-      * Link to installer: [Link to installer](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)
+    2. Alternatively, you can use an installer:
+        * Link to installer: [Link to installer](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)
 	
 2. Configure your environment
   * Select your API: `ibmcloud api https://api.ng.bluemix.net`
