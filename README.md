@@ -1,15 +1,15 @@
 # ServerlessDays NYC
-Below are the instructions for the IBM Cloud Functions & Apache Openwhisk lab at Serverless Days NYC 2018.
+Below are the instructions for the IBM Cloud Functions & Apache OpenWhisk lab at Serverless Days NYC 2018.
 
 Feel free to reach out with any questions!
 
 
-###Sign up for IBM Cloud Account
+### Sign up for IBM Cloud Account
 *IBM Cloud Functions is based on the Apache OpenWhisk project.  We'll be using IBM Cloud Functions for today's lab, but the concepts could apply to any managed Serverless offering.*
 
 1. [Sign up for an IBM Cloud Account](https://ibm.biz/BdYYJG) [https://ibm.biz/BdYYJG]
 
-###Install IBM Cloud CLI & IBM Cloud Functions Plugin
+### Install IBM Cloud CLI & IBM Cloud Functions Plugin
 *In this section, you will install the IBM Cloud CLI and the IBM Cloud Functions Plugin to the CLI, as well as do some account set up and configuration. This will enable you to interact with IBM Cloud Functions from a command line interface.*
 
 1. Install the IBM Cloud CLI 
@@ -67,9 +67,12 @@ From Shell:
 ### Create an action that fires in response to a Kafka trigger
 *You can imagine that you could do something a little more interesting than hello world.  For this section of the lab, you'll be creating a trigger that will fire whenever a new item is placed on a Kafka topic.  That trigger will be connected to an action (via a rule).  The action will run some code to process the incoming kafka message.*
 
-Clone the repo containing the action REPO-LINK-HERE? git clone github-link; 
+
+git clone this repo github-link;
+
 Change directories to the folder containing the action. `cd CORRECT_FOLDER`
-------UNTIL WE HAVE A REPO:
+
+------UNTIL WE HAVE A REPO-------
 
 1. Create a folder for this project, and create a file named kafkaAction.js: `mkdir myFolder && cd myFolder && touch kafkaAction.js`
 2. Open the kafkaAction.js file in your favorite editor & paste the following code into the file
@@ -129,4 +132,4 @@ Change directories to the folder containing the action. `cd CORRECT_FOLDER`
 
 		  As you can see, the response contains our expected message topic.
 		  
-	* You can also go view the monitor dashboard at 
+	* You can also go view the [monitor dashboard](https://console.bluemix.net/openwhisk/dashboard) to see some recent invocations.
