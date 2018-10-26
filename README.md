@@ -106,6 +106,7 @@ Change directories to the folder containing the action. `cd CORRECT_FOLDER`
 7. The instructors will be sending messages to the kafka topic periodically.  You can see your action firing a couple of different ways:
 	* Look at the activations: 
 	  * `ibmcloud fn activation list` to see something like this:
+	 
 
 			```
 			activations
