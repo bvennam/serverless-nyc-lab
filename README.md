@@ -14,13 +14,12 @@ Feel free to reach out with any questions!
 
 1. Install the IBM Cloud CLI 
 From Shell:
- 
- 	* Mac/Linux: In your terminal window, run `curl -sL https://ibm.biz/idt-installer | bash`
+	* Mac/Linux: In your terminal window, run `curl -sL https://ibm.biz/idt-installer | bash`
  	* Windows 10 Pro, run `Set-ExecutionPolicy Unrestricted; iex(New-Object Net.WebClient).DownloadString('http://ibm.biz/idt-win-installer')`
  
  Alternatively, you can use an installer:
  
-	* [Link to installer](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)
+ * Link to installer: [Link to installer](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)
 	
 2. Configure your environment
   * Select your API: `ibmcloud api https://api.ng.bluemix.net`
