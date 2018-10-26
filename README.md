@@ -20,7 +20,7 @@ From Shell:
  
  Alternatively, you can use an installer:
  
-	* [Link to installer](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)[https://console.bluemix.net/docs/cli/reference/ibmcloud/download\_cli.html#install\_use]
+	* [Link to installer](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use) [https://console.bluemix.net/docs/cli/reference/ibmcloud/download\_cli.html#install\_use]
 	
 2. Configure your environment
   * Select your API: `ibmcloud api https://api.ng.bluemix.net`
