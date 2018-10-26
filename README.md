@@ -63,6 +63,7 @@ From Shell:
 	    "greeting": "Hello Belinda"
 	}
 	```
+	
 
 ###Create an action that fires in response to a Kafka trigger
 *You can imagine that you could do something a little more interesting than hello world.  For this section of the lab, you'll be creating a trigger that will fire whenever a new item is placed on a Kafka topic.  That trigger will be connected to an action (via a rule).  The action will run some code to process the incoming kafka message.*
