@@ -117,11 +117,12 @@ Feel free to reach out with any questions!
 		  		"statusCode": 0,
 		  		"success": true,
 		  		"result": {
-		  			"greeting": "The message \"This is the content of my message\" arrived on the kafka topic mytopic"
+					"message": "\"This is the content of my message\"",
+					"topic": "mytopic"
+				}
         		}
-		    },
 
 
 		  As you can see, the response contains our expected message and topic.
 
-	* You can also go view the [monitor dashboard](https://console.bluemix.net/openwhisk/dashboard) to see some recent invocations.
+	* You can also go view the [monitor dashboard](https://console.bluemix.net/openwhisk/dashboard) to see your recent invocations.
