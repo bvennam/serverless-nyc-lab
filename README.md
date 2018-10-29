@@ -71,11 +71,10 @@ Feel free to reach out with any questions!
 
 	```
 	function main(params) {
-	    console.log(params)
-	  if (params) {
-	    return { greeting: `The message ${params.messages[0].value} arrived on the kafka topic ${params.messages[0].topic}` };
-	  }
-	  return { greeting: 'Hello stranger!' };
+	  if (params.messages) {
+	    return { message: params.messages[0].value,
+		     topic: params.messages[0].topic };
+	  }
 	}
 	```
 3. Save the file.  
@@ -105,7 +104,7 @@ Feel free to reach out with any questions!
 
 			activations
 			02e1e4fa56dc49c1a1e4fa56dcc9c1d2 kafkaAction          
-			9c10e5ac5c21449690e5ac5c21c49611 MyMessageHubTrigger
+			9c10e5ac5c21449690e5ac5c21c49611 myMessageHubTrigger
 
 
 	As you can see, the trigger was fired, which cased the kafkaAction to be fired due to the rule we created.
