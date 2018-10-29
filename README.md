@@ -66,13 +66,6 @@ Feel free to reach out with any questions!
 ### Create an action that fires in response to a Kafka trigger
 *You can imagine that you could do something a little more interesting than hello world.  For this section of the lab, you'll be creating a trigger that will fire whenever a new item is placed on a Kafka topic.  That trigger will be connected to an action (via a rule).  The action will run some code to process the incoming kafka message.*
 
-
-git clone this repo github-link;
-
-Change directories to the folder containing the action. `cd CORRECT_FOLDER`
-
-------UNTIL WE HAVE A REPO-------
-
 1. Create a folder for this project, and create a file named kafkaAction.js: `mkdir myFolder && cd myFolder && touch kafkaAction.js`
 2. Open the kafkaAction.js file in your favorite editor & paste the following code into the file
 
@@ -91,7 +84,7 @@ Change directories to the folder containing the action. `cd CORRECT_FOLDER`
   * To create the trigger, you will first need a package binding, which will store the credentials for the kafka instance.  For simplicity in this lab, we are using a kafka instance already created by the instructors. Copy paste the following command into the terminal to create the package binding:
 
 	  ```
-	  command?
+	  ibmcloud fn package bind /whisk.system/messaging myMessageHub -p kafka_brokers_sasl "[\"kafka03-prod02.messagehub.services.us-south.bluemix.net:9093\", \"kafka02-prod02.messagehub.services.us-south.bluemix.net:9093\", \"kafka04-prod02.messagehub.services.us-south.bluemix.net:9093\", \"kafka01-prod02.messagehub.services.us-south.bluemix.net:9093\", \"kafka05-prod02.messagehub.services.us-south.bluemix.net:9093\"]" -p user HFrcTJyrKd0GRNkK -p password 5NJkATVxktFCnN79Gxa1flhe9GDWJE8s -p kafka_admin_url "https://kafka-admin-prod02.messagehub.services.us-south.bluemix.net:443"
 	  ```
   * Create the trigger using the package binding you just created to listen to the topic named "mytopic"
 
