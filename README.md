@@ -7,7 +7,7 @@ Feel free to reach out with any questions!
 ### Sign up for IBM Cloud Account
 *IBM Cloud Functions is based on the Apache OpenWhisk project.  We'll be using IBM Cloud Functions for today's lab, but the concepts could apply to any managed Serverless offering.*
 
-1. [Sign up for an IBM Cloud Account](https://ibm.biz/BdY3BT) [https://ibm.biz/BdY3BT]
+1. [Sign up for an IBM Cloud Account](https://ibm.biz/BdY3BT)
 2. This should redirect you to IBM Cloud, but if not you can go directly there at [https://bluemix.net](https://bluemix.net)
 3. Sign in to confirm your account was created.
 
